@@ -12,16 +12,16 @@ public class Triangle {
     }
 
     public double getPerimeter(){
-        Points p1 = triangle.get(1);
-        Points p2 = triangle.get(2);
-        Points p3 = triangle.get(3);
+        Points p1 = triangle.get(0);
+        Points p2 = triangle.get(1);
+        Points p3 = triangle.get(2);
         return getDistance(p1,p2) + getDistance(p2,p3) + getDistance(p3,p1);
     }
 
     public boolean isIsosceles(){
-        Points p1 = triangle.get(1);
-        Points p2 = triangle.get(2);
-        Points p3 = triangle.get(3);
+        Points p1 = triangle.get(0);
+        Points p2 = triangle.get(1);
+        Points p3 = triangle.get(2);
         double distance1 = getDistance(p1,p2);
         double distance2 = getDistance(p1,p2);
         double distance3 = getDistance(p1,p2);
