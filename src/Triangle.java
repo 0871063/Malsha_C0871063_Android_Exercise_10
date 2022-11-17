@@ -23,9 +23,9 @@ public class Triangle {
         Points p2 = triangle.get(1);
         Points p3 = triangle.get(2);
         double distance1 = getDistance(p1,p2);
-        double distance2 = getDistance(p1,p2);
-        double distance3 = getDistance(p1,p2);
-        if (distance1 == distance2 || distance2 == distance3 ||distance3 == distance1 ) {
+        double distance2 = getDistance(p2,p3);
+        double distance3 = getDistance(p3,p1);
+        if (distance1 == distance2 || distance2 == distance3 || distance3 == distance1 ) {
             return true;
         }
         else{
